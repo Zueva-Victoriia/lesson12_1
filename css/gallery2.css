@@ -1,0 +1,56 @@
+
+		html, body {
+			margin: 0;   /*сброс программистских решений*/
+			padding: 0;
+
+		}
+
+		#gallery {
+			max-width: 860px; /*responible*/
+			margin: 0 auto;
+            text-align: center;
+
+		}
+
+		#gallery .photos img {
+			width: 100%;
+			opacity: 0;
+			transition: opacity 5s;
+			position: absolute;
+			left: 0;
+			z-index: -10 000;
+
+
+			
+
+		}
+	
+		.photos {
+
+			position: relative;
+			height: 670px;
+
+
+		}
+	
+	
+
+		#gallery .photos img.showed {
+			opacity: 1;
+
+		}
+
+
+		.buttons{
+			z-index: 10 000;
+
+		}
+		
+		 i{
+		 	font-size: 25px;
+		 	color: green;
+		 	position: fixed;
+		 	float: right;
+		 	padding: 20px;
+
+		 }
